@@ -26,7 +26,7 @@ Repository for GRYFN Processing Tool's companion gryfn-python module
    ```
 
 ## Usage
-See exmples directory
+See [examples](examples) directory
 
 ## Roadmap
 Make available through normal python package distributions?
