@@ -29,6 +29,7 @@ Repository for GRYFN Processing Tool's companion gryfn-python module
 See [examples](examples) directory
 
 ## Roadmap
+Make public
 Make available through normal python package distributions?
 
 ## Authors and acknowledgment
