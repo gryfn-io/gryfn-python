@@ -31,6 +31,10 @@ gryfn-python can be installed from a wheel file or source code included with eac
    ```
 
 ## Usage
+gryfn-python is a python package that helps index and query processed GRYFN data in it's original (.gpro) structure.
+
+
+
 See [examples](examples) directory
 
 ## Roadmap
