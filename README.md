@@ -4,23 +4,35 @@
 Repository for GRYFN Processing Tool's companion gryfn-python module
 
 ## Installation
- * Download the repo and extract it into a local directory.
- * cd into the root directory where setup.py is located.
- * Enter: python setup.py install
+ * Download the wheel file to a local directory.
+ * Navigate into the directory
+   ```
+   cd C:\Users\YourUserName\Downloads\
+   ```
+ * Install gryfn-python
+   ```
+   pip install gryfn-0.1-py3-none-any.whl
+   ```
 
  Alternatively,
- * Download the repo and extract it into a local directory.
- * cd into the wheel directory
- * Enter: pip install gryfn-0.1-py3-none-any.whl
+ * Download the source code and extract it into a local directory.
+ * Navigate into the directory where setup.py is located
+   ```
+   cd C:\Users\YourUserName\Downloads\
+   ```
+ * Install gryfn-python
+   ```
+   python setup.py install
+   ```
 
 ## Usage
 See exmples directory
 
 ## Roadmap
-Make wheel file available through normal python package distributions?
+Make available through normal python package distributions?
 
 ## Authors and acknowledgment
-<3 KT
+Kenneth Tussey
 
 ## Project status
 Stable
