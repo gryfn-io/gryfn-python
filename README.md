@@ -4,6 +4,11 @@
 Repository for GRYFN Processing Tool's companion gryfn-python module
 
 ## Installation
+gryfn-python can be installed from a wheel file or source code included with each release. Both methods are described below.
+
+> &#128221; Be sure to install gryfn-python in your intended Python environment 
+
+### From Wheel
  * Download the wheel file to a local directory.
  * Navigate into the directory
    ```
@@ -14,7 +19,7 @@ Repository for GRYFN Processing Tool's companion gryfn-python module
    pip install gryfn-0.1-py3-none-any.whl
    ```
 
- Alternatively,
+### From Source
  * Download the source code and extract it into a local directory.
  * Navigate into the directory where setup.py is located
    ```
