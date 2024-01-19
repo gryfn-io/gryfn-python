@@ -1,7 +1,9 @@
 # gryfn-python
 
 ## Description
-Repository for GRYFN Processing Tool's companion gryfn-python module
+gryfn-python is a python package that helps index and query processed GRYFN data in it's original (.gpro) structure.
+Use gryfn-python to pass input arguments to your custom python scripts through GRYFN Processing Tool and simplify post-processing
+on your GRYFN processed data.
 
 ## Installation
 gryfn-python can be installed from a wheel file or source code included with each release. Both methods are described below.
@@ -30,16 +32,19 @@ gryfn-python can be installed from a wheel file or source code included with eac
    python setup.py install
    ```
 
+## Setup
+To use gryfn-python in GRYFN Processing Tool, External Scripts Settings must be configured.
+An example is given below for a python conda environment named ```gryfn-python```
+
+![gryfn-python stup in GRYFN Processing Tool](imgs/gryfn-python-setup.png)
+
 ## Usage
-gryfn-python is a python package that helps index and query processed GRYFN data in it's original (.gpro) structure.
-
-
-
 See [examples](examples) directory
 
 ## Roadmap
-Make public
-Make available through normal python package distributions?
+* Improve usage section
+* Make public
+* Make available through normal python package distributions?
 
 ## Authors and acknowledgment
 Kenneth Tussey
