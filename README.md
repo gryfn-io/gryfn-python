@@ -34,9 +34,9 @@ gryfn-python can be installed from a wheel file or source code included with eac
 
 ## Setup
 To use gryfn-python in GRYFN Processing Tool, External Scripts Settings must be configured.
-An example is given below for a python conda environment named ```gryfn-python```
+An example is given below for a python conda environment named ```gryfn-python```.
 
-![gryfn-python stup in GRYFN Processing Tool](imgs/gryfn-python-setup.png)
+![gryfn-python setup in GRYFN Processing Tool](imgs/gryfn-python-setup.png)
 
 ## Usage
 See [examples](examples) directory
