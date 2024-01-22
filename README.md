@@ -25,7 +25,7 @@ gryfn-python can be installed from a wheel file or source code included with eac
  * Download the source code and extract it into a local directory.
  * Navigate into the directory where setup.py is located
    ```
-   cd C:\Users\YourUserName\Downloads\
+   cd C:\Users\YourUserName\Downloads\gryfn-python-0.1\
    ```
  * Install gryfn-python
    ```
