@@ -43,7 +43,6 @@ See [examples](examples) directory
 
 ## Roadmap
 * Improve usage section
-* Make public
 * Make available through normal python package distributions?
 
 ## Authors and acknowledgment
