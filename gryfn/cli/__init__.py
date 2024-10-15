@@ -4,7 +4,7 @@ import json
 arguments = argparse.ArgumentParser(
     description='Run custom processing module for your GPros.')
 
-
+description = "Describe your python script here"
 def FileString(argstring):
     return repr(argstring).strip("'")
 
