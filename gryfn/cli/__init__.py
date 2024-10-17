@@ -1,10 +1,10 @@
 import argparse
 import json
 
-arguments = argparse.ArgumentParser(
-    description='Run custom processing module for your GPros.')
-
 description = "Describe your python script here"
+arguments = argparse.ArgumentParser(description=description)
+
+
 def FileString(argstring):
     return repr(argstring).strip("'")
 
@@ -13,6 +13,9 @@ def GPro(argstring):
     from gryfn import GPro
     return GPro(repr(argstring).strip("'"))
 
+
+def ENVIProduct(argstring):
+    return repr(argstring).strip("'")
 
 
 arguments.add_argument('--gpro', type=GPro, help="location of gpro to process")
@@ -25,6 +28,10 @@ arguments.add_argument("--inspect", action='store_true', help=argparse.SUPPRESS)
 def parse_args():
     args = arguments.parse_args()
     if args.inspect:
+        payload = {
+            "description": description,
+            "arguments": []
+        }
         script_args = []
         for a in arguments._action_groups:
             for ga in a._group_actions:
@@ -34,7 +41,8 @@ def parse_args():
                         "type": ga.type.__name__,
                         "default": ga.default,
                         "help":  ga.help})
-        print(json.dumps(script_args))
+        payload["arguments"] = script_args
+        print(json.dumps(payload))
         exit(0)
     if not args.gpro:
         raise Exception("Could not find gpro '%s' on file system" % args.gpro)
