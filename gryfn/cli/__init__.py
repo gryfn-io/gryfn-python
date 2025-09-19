@@ -35,6 +35,12 @@ def parse_args():
         script_args = []
         for a in arguments._action_groups:
             for ga in a._group_actions:
+                if ga.nargs == 0 and ga.const and not ga.default and ga.option_strings[0] != "--inspect":
+                    script_args.append({
+                        "argument": ga.option_strings[0],
+                        "type": "bool",
+                        "default": False,
+                        "help":  ga.help})
                 if ga.type:
                     script_args.append({
                         "argument": ga.option_strings[0],
